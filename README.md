@@ -1,27 +1,31 @@
-# 🧠 HR Assistant: Resume Screener & Comparator
+# 🧠 AI HR Assistant (LangChain + OpenAI + Agent Tools)
 
-This beginner-friendly Python app uses **LangChain**, **OpenAI**, and the **Unstructured** library to:
+This project is a beginner-friendly **AI-powered HR assistant** built with **LangChain**, **OpenAI**, and **Python**. It helps automate tasks like:
 
-- 📝 Evaluate candidate fit for a job.
-- 💬 Analyze the tone of a cover letter.
-- 🧠 Compare the current candidate to the previous one using memory.
-- ✅ Recommend which candidate to hire.
+- Screening resumes against job descriptions.
+- Analyzing the sentiment of cover letters.
+- Comparing candidates and recommending the better fit.
 
----
-
-## 📦 Features
-
-- Extracts text from **PDF**, **DOCX**, and other file formats.
-- Uses **LLM Chains** for reasoning and decision-making.
-- Remembers previous candidate data using `ConversationBufferMemory`.
-- Makes clear recommendations based on analysis.
+It uses **agent-based reasoning** to decide which task to run based on your natural language input!
 
 ---
 
-## 🛠 Requirements
+## 🚀 Features
 
-Install the required packages:
+- ✅ Upload and process **Job Description**, **Resume**, and **Cover Letter** files.
+- 🧠 AI will **evaluate candidate fit**, **analyze sentiment**, and **compare candidates**.
+- 🗣️ You can chat with the AI to ask questions—**no button clicking needed!**
+- 🤖 Built using LangChain's **Conversational Agent** with memory and tools.
 
-```bash
-pip install langchain openai unstructured python-dotenv
-pip install "unstructured[local-inference-docs]"
+---
+
+## 🛠️ Technologies Used
+
+- [LangChain](https://www.langchain.com/)
+- [OpenAI GPT-3.5/4](https://platform.openai.com/)
+- [Unstructured](https://github.com/Unstructured-IO/unstructured) for file parsing
+- [Python 3.10+](https://www.python.org/)
+- `.env` file for managing OpenAI API key
+
+---
+
